@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile-sass": "sass sass/main.scss css/index.css --no-source-map --watch"
+    "scss": "sass src/sass/main.scss src/css/index.css --no-source-map --watch",
+    "dev": "concurrently \" npm start \" \" npm run scss  \""
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
   }
 }
