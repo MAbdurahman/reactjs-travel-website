@@ -1,0 +1,9 @@
+{
+  "name": "reactjs-portfolio-sass",
+  "version": "1.0.0",
+  "description": "application to get familiar with sass in react",
+  "main": "index.js",
+  "repository": "https://github.com/MAbdurahman/reactjs-portfolio-sass.git",
+  "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
+  "license": "MIT"
+}
