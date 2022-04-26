@@ -3,3 +3,12 @@
 ================================================*/
 @use './base/resets';
 @use './base/typography';
+
+//import utils
+@use './utils/utils';
+
+//import layouts
+@use './layouts/header';
+
+//import components
+@use './components/buttons';
