@@ -3,3 +3,6 @@
 ================================================*/
 @use './base/resets';
 @use './base/typography';
+
+//import components
+@use './components/header';
