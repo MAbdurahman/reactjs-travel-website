@@ -1,0 +1,13 @@
+/*=============================================
+            mixins.scss
+================================================*/
+
+@mixin position($position, $top, $left, $bottom, $right, $width, $height) {
+	position: $position;
+	top: $top;
+	left: $left;
+	bottom: $bottom;
+	right: $right;
+	width: $width;
+	height: $height;
+}
