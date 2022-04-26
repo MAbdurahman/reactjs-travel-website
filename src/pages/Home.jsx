@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import Header from './../components/Header'
 
 export default function Home() {
 	return (
-		<div>
-			<h2>home page</h2>
-		</div>
+		<>
+			<Header>
+				
+			</Header>
+		</>
 	);
 }
