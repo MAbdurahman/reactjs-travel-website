@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "sass src/scss/main.scss src/css/index.css --no-source-map --watch",
+    "scss": "sass src/scss/main.scss src/css/main.css --watch --no-source-map --style compressed",
     "dev": "concurrently \" npm start \" \" npm run scss  \""
   },
   "eslintConfig": {
