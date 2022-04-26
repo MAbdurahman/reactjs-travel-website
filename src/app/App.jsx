@@ -3,7 +3,7 @@ import React from 'react';
 export default function App() {
 	return (
 		<div>
-			<h2>ReactJS Portfolio SASS</h2>
+			<h2>ReactJS Travel Website</h2>
 		</div>
 	);
 }
