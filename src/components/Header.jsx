@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 
 
-export default function Header() {
+export default function Header({ heading, paragraph, children, image }) {
 	//**************** variables ****************//
 	const [state] = useState({
 		video1: '/assets/videos/travel.mp4',
@@ -34,13 +34,13 @@ export default function Header() {
 						<div className='header__contents__text'>
 							<div className='header__contents__text__child'>
 								<h1 className='header__contents__text__child__h1'>
-									We are travelling friends
+									{heading}
 								</h1>
 								<p className='header__contents__text__child__p'>
-									Come join us. We travel the most famous and beautiful places in the world.
+									{paragraph}
 								</p>
 								<div className='header__contents__text__child__link'>
-									<button>Get Started</button>
+									{children}
 								</div>
 							</div>
 						</div>
