@@ -17,7 +17,7 @@ export default function SignUp(props) {
 	};
 	return (
 		<form onSubmit={handleSignUp}>
-			<div className='model__heading'>
+			<div className='modal__heading'>
 				<h3>Sign Up</h3>
 			</div>
 			<div className='group'>
@@ -25,7 +25,7 @@ export default function SignUp(props) {
 					type='text'
 					name=''
 					className='group__control'
-					placeholder='Name'
+					placeholder='Enter name'
 					onChange={e => setState({ ...state, name: e.target.value })}
 					value={state.name}
 				/>
@@ -35,7 +35,7 @@ export default function SignUp(props) {
 					type='email'
 					name=''
 					className='group__control'
-					placeholder='Email'
+					placeholder='Enter email'
 					onChange={e => setState({ ...state, email: e.target.value })}
 					value={state.email}
 				/>
@@ -45,26 +45,22 @@ export default function SignUp(props) {
 					type='password'
 					name=''
 					className='group__control'
-					placeholder='Password'
+					placeholder='Enter password'
 					onChange={e => setState({ ...state, password: e.target.value })}
 					value={state.password}
 				/>
 			</div>
 			<div className='group model__row'>
-				<input
-					type='submit'
-					name=''
-					className='btn-dark'
-					value='Register'
-				/>
-				<span>Already have an account?</span>
-				<span
+				<input type='submit' name='' className='btn-dark' value='Sign Up' />
+				<p
+					style={{ display: 'inline-block' ,marginLeft: '4em'}}
 					onClick={() =>
 						dispatch({ type: OPEN_MODAL, payload: props.currentModal })
 					}
 				>
-					Sign In
-				</span>
+					Already have an account?&nbsp;
+					<span>Sign In</span>
+				</p>
 			</div>
 		</form>
 	);

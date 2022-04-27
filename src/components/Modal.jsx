@@ -11,7 +11,7 @@ export default function Modal(props) {
 	};
 	return state.modalStatus && state.current === props.current ? (
 		<div className='modal' onClick={closeModal}>
-			<div className='modal__body'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, ducimus repellat ullam optio quasi eum necessitatibus amet recusandae corporis culpa commodi minus. Neque, molestiae asperiores. Dolores magni autem sint hic.</div>
+			<div className='modal__body'>{props.children}</div>
 		</div>
 	) : (
 		''

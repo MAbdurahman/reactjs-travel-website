@@ -3,14 +3,35 @@
 	@include abstracts.position(fixed, 0, 0, 0, 0, 100%, 100%);
 	background: rgba(0, 0, 0, 0.4);
 	@include abstracts.align(flex, center, center, null);
-
+	z-index: 6;
+	&__heading {
+		h3 {
+			font-size: 3rem;
+			font-weight: 500;
+			margin-bottom: 1.5rem;
+			@include abstracts.responsive(xsmall) {
+				font-size: 1.7rem;
+			}
+		}
+	}
 	&__body {
 		background: abstracts.$white;
-		width: 40rem;
+		width: 47rem;
 		height: auto;
 		padding: 2rem;
 		font-size: 1.4rem;
-      letter-spacing: 1px;
-      @include abstracts.animateMoveUpOrDown(modelAnimate, .5s, linear, -10rem, 0);
+		letter-spacing: 1px;
+		@include abstracts.animateMoveUpOrDown(
+			modelAnimate,
+			0.5s,
+			linear,
+			-10rem,
+			0
+		);
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
