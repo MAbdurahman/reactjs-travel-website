@@ -1,13 +1,13 @@
 import { OPEN_MODAL, CLOSE_MODAL } from '../types/modalTypes';
-const ModelReducer = (state, action) => {
-	if (action.type === OPEN_MODEL) {
+const ModalReducer = (state, action) => {
+	if (action.type === OPEN_MODAL) {
 		return {
-			modelStatus: true,
+			modalStatus: true,
 			current: action.payload,
 		};
-	} else if (action.type === CLOSE_MODEL) {
+	} else if (action.type === CLOSE_MODAL) {
 		return {
-			modelStatus: false,
+			modalStatus: false,
 			current: '',
 		};
 	} else {
@@ -15,4 +15,4 @@ const ModelReducer = (state, action) => {
 	}
 };
 
-export default ModelReducer;
+export default ModalReducer;

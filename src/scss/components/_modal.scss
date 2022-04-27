@@ -11,5 +11,6 @@
 		padding: 2rem;
 		font-size: 1.4rem;
       letter-spacing: 1px;
+      @include abstracts.animateMoveUpOrDown(modelAnimate, .5s, linear, -10rem, 0);
 	}
 }
