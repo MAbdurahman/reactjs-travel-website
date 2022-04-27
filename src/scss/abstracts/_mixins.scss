@@ -43,7 +43,7 @@
 	cursor: pointer;
 	text-transform: uppercase;
 }
-@mixin animation($name, $duration, $timeFunction, $translate1, $translate2) {
+@mixin animateMoveUpOrDown($name, $duration, $timeFunction, $translate1, $translate2) {
 	animation: $name $duration $timeFunction;
 	@keyframes #{$name} {
 		0% {

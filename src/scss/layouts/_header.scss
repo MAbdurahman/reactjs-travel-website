@@ -25,16 +25,17 @@
 					font-weight: 900;
 					font-size: 4.2rem;
 					line-height: 3rem;
-					@include abstracts.animation(heading, 1s, ease-in, -8rem, 0);
+					@include abstracts.animateMoveUpOrDown(heading, 1s, ease-in, -8rem, 0);
 				}
 				&__p {
 					margin-top: 1rem;
 					color: abstracts.$white;
 					font-size: 1.5rem;
+					@include abstracts.animateMoveUpOrDown(subHeading, 1s, ease-out, -10rem, 0);
 				}
 				&__link {
 					margin-top: 1rem;
-					
+					@include abstracts.animateMoveUpOrDown(headerButton, 1s, ease-in, 8rem, 0);
 				}
 			}
 		}
