@@ -15,7 +15,11 @@ export default function Header({ heading, paragraph, children, image }) {
 	});
 	return (
 		<div className='header'>
-			<div className='container pr'></div>
+			<div className='container pr'>
+				<div className='header__logo'>
+					<img src={state.logo} alt='logo' />
+				</div>
+			</div>
 			<div className='header__video'>
 				<video
 					id='video_background'

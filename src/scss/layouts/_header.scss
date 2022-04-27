@@ -7,7 +7,17 @@
 	width: 100%;
 	height: 100vh;
 	clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%, 0 100%, 0% 60%, 0 0);
+	&__logo {
+		@include abstracts.position(absolute, 3rem, 0, null, null, null, null);
+		z-index: 1;
 
+		img {
+            width: 15rem;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+		}
+	}
 	&__video {
 		@include abstracts.position(absolute, 0, 0, null, null, 100%, 100%);
 		overflow: hidden;
@@ -25,15 +35,37 @@
 					font-weight: 900;
 					font-size: 4.2rem;
 					line-height: 3rem;
+					letter-spacing: 2px;
+					@include abstracts.animateMoveUpOrDown(
+						heading,
+						1s,
+						ease-in,
+						-8rem,
+						0
+					);
 				}
 				&__p {
 					margin-top: 1rem;
 					color: abstracts.$white;
 					font-size: 1.5rem;
+					letter-spacing: 1px;
+					@include abstracts.animateMoveUpOrDown(
+						subHeading,
+						1s,
+						ease-out,
+						-10rem,
+						0
+					);
 				}
 				&__link {
 					margin-top: 1rem;
-					
+					@include abstracts.animateMoveUpOrDown(
+						headerButton,
+						1s,
+						ease-in,
+						8rem,
+						0
+					);
 				}
 			}
 		}

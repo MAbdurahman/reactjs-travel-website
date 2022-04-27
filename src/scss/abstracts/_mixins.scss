@@ -33,6 +33,7 @@
 	text-decoration: none;
 	height: $height;
 	line-height: $height;
+	letter-spacing: 1px;
 	display: inline-block;
 	font-size: $fontSize;
 	font-weight: 400;
@@ -43,7 +44,7 @@
 	cursor: pointer;
 	text-transform: uppercase;
 }
-@mixin animation($name, $duration, $timeFunction, $translate1, $translate2) {
+@mixin animateMoveUpOrDown($name, $duration, $timeFunction, $translate1, $translate2) {
 	animation: $name $duration $timeFunction;
 	@keyframes #{$name} {
 		0% {
