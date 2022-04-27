@@ -25,6 +25,7 @@
 					font-weight: 900;
 					font-size: 4.2rem;
 					line-height: 3rem;
+					@include abstracts.animation(heading, 1s, ease-in, -8rem, 0);
 				}
 				&__p {
 					margin-top: 1rem;
