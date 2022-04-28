@@ -6,6 +6,7 @@ import About from './../pages/About';
 import Contact from './../pages/Contact';
 import NotFound from '../pages/NotFound';
 import Navigation from './../components/Navigation'
+import Hamburger from './../components/Hamburger'
 import ModalProvider from './../contexts/providers/modalProvider';
 import NavProvider from './../contexts/providers/navProvider';
 
@@ -15,6 +16,7 @@ export default function App() {
 		<Router>
 			<ModalProvider>
 				<NavProvider>
+					<Hamburger />
 					<Navigation />
 					<Switch>
 						<Route path='/' exact component={Home} />

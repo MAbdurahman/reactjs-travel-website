@@ -57,6 +57,17 @@
 		}
 	}
 }
+@mixin hamburgerSpans($color, $width, $height, $mt) {
+	width: $width;
+	height: $height;
+	display: block;
+	z-index: 5;
+	margin-top: $mt;
+	background-color: $color;
+	border-radius: 5px;
+	transition: transform 0.3s linear;
+
+}
 @mixin toggleSpans($bg, $width, $height, $mt) {
 	display: block;
 	background: $bg;

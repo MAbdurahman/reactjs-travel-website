@@ -10,6 +10,7 @@
 .nav {
 	@include position(fixed, 0, null, 0, 0, 31.2rem, 100%);
 	background: $white;
+	background: $silverLight-50;
 	z-index: 4;
 	transition: all 0.333s linear;
 	@include align(flex, center, center, 100%);
