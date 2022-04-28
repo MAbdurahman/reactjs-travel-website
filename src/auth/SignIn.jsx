@@ -48,7 +48,7 @@ export default function SignIn(props) {
 					}
 				>
 					Do not have an account?&nbsp;
-					<span>Sign Up</span>
+					<span style={{color: '#ff4d58'}}>Sign Up</span>
 				</p>
 			</div>
 		</form>
