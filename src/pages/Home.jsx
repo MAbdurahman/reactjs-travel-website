@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './../components/Header';
 import Modal from './../components/Modal';
 import ModalContext from './../contexts/modalContext';
@@ -23,6 +24,14 @@ export default function Home() {
 
 	return (
 		<>
+			<Helmet>
+				<title>Travelling Friends</title>
+				<meta
+					name='description'
+					content='Travel the world with Travelling Friends'
+				/>
+				<meta name='keywords' content='travel, travel tours, airline' />
+			</Helmet>
 			<Header heading={state.heading} paragraph={state.paragraph}>
 				<button className='btn-default' onClick={openModal}>
 					Get Started

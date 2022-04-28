@@ -18,12 +18,14 @@ export default function App() {
 				<NavProvider>
 					<Hamburger />
 					<Navigation />
-					<Switch>
-						<Route path='/' exact component={Home} />
-						<Route path='/about' exact component={About} />
-						<Route path='/contact' exact component={Contact} />
-						<Route component={NotFound} />
-					</Switch>
+					<HelmetProvider>
+						<Switch>
+							<Route path='/' exact component={Home} />
+							<Route path='/about' exact component={About} />
+							<Route path='/contact' exact component={Contact} />
+							<Route component={NotFound} />
+						</Switch>
+					</HelmetProvider>
 				</NavProvider>
 			</ModalProvider>
 		</Router>
