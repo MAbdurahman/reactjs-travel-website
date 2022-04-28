@@ -5,6 +5,7 @@ import Home from './../pages/Home';
 import About from './../pages/About';
 import Contact from './../pages/Contact';
 import NotFound from '../pages/NotFound';
+import Navigation from './../components/Navigation'
 import ModalProvider from './../contexts/providers/modalProvider';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
 	return (
 		<Router>
 			<ModalProvider >
+				<Navigation />
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/about' exact component={About} />
