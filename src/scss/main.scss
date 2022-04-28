@@ -1,6 +1,7 @@
 /*=============================================
             Main.scss
 ================================================*/
+//import base
 @use './base/resets';
 @use './base/typography';
 
@@ -9,7 +10,9 @@
 
 //import layouts
 @use './layouts/header';
+@use './layouts/navigation';
 
 //import components
 @use './components/buttons';
 @use './components/modal';
+@use './components/hamburger';
