@@ -7,19 +7,22 @@ import Contact from './../pages/Contact';
 import NotFound from '../pages/NotFound';
 import Navigation from './../components/Navigation'
 import ModalProvider from './../contexts/providers/modalProvider';
+import NavProvider from './../contexts/providers/navProvider';
 
 export default function App() {
 	
 	return (
 		<Router>
-			<ModalProvider >
-				<Navigation />
-				<Switch>
-					<Route path='/' exact component={Home} />
-					<Route path='/about' exact component={About} />
-					<Route path='/contact' exact component={Contact} />
-					<Route component={NotFound} />
-				</Switch>
+			<ModalProvider>
+				<NavProvider>
+					<Navigation />
+					<Switch>
+						<Route path='/' exact component={Home} />
+						<Route path='/about' exact component={About} />
+						<Route path='/contact' exact component={Contact} />
+						<Route component={NotFound} />
+					</Switch>
+				</NavProvider>
 			</ModalProvider>
 		</Router>
 	);
