@@ -1,0 +1,44 @@
+/*=============================================
+      _destinations.scss
+================================================*/
+@use './../abstracts' as *;
+.destinations {
+	margin: 8rem 0;
+	@include responsive(xsmall) {
+		margin: 4rem 0;
+	}
+	&__heading {
+		font-size: 2.8rem;
+		color: $black;
+		font-weight: 500;
+		width: 60%;
+		line-height: 4rem;
+		position: relative;
+		@include responsive(large) {
+			width: 100%;
+		}
+		@include responsive(xsmall) {
+			font-size: 2.1rem;
+			line-height: 3.5rem;
+			text-transform: capitalize;
+		}
+		 &::after {
+			position: absolute;
+			content: '';
+			bottom: -0.5rem;
+			left: 0;
+			width: 33%;
+			height: 0.2rem;
+			background: $main1;
+			/* @include responsive(large) {
+				width: 70%;
+			} */
+		} 
+	}
+	&__paragraph {
+		font-size: 1.6rem;
+		line-height: 2.7rem;
+		color: $silverLight;
+		font-weight: 400;
+	}
+}
