@@ -7,7 +7,7 @@ export const destinations = [
 		image: '/assets/destinations/uk.jpg',
 		bigImage: '/assets/destinations/ukBig.jpg',
 		language: 'English',
-		currency: 'pound',
+		currency: 'Pound',
 	},
 	{
 		id: 2,
@@ -17,7 +17,7 @@ export const destinations = [
 		image: '/assets/destinations/usa.jpg',
 		bigImage: '/assets/destinations/usaBig.jpg',
 		language: 'English',
-		currency: 'Dollor',
+		currency: 'Dollar',
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ export const destinations = [
 		image: '/assets/destinations/thailand.jpg',
 		bigImage: '/assets/destinations/thailandBig.jpg',
 		language: 'Thai',
-		currency: 'Thai baht',
+		currency: 'Thai Baht',
 	},
 	{
 		id: 4,
@@ -67,7 +67,7 @@ export const destinations = [
 		image: '/assets/destinations/switzerland.jpg',
 		bigImage: '/assets/destinations/switzerlandBig.jpg',
 		language: 'German, French, Italian, Romansh',
-		currency: 'Swiss franc',
+		currency: 'Swiss Franc',
 	},
 	{
 		id: 8,
@@ -77,6 +77,6 @@ export const destinations = [
 		image: '/assets/destinations/turkey.jpg',
 		bigImage: '/assets/destinations/turkeyBig.jpg',
 		language: 'Turkish',
-		currency: 'lira',
+		currency: 'Lira',
 	},
 ];
