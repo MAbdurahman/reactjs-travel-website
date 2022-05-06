@@ -8,7 +8,7 @@ export default function Contact() {
 				<title>Contact Us</title>
 				<meta
 					name='description'
-					content='Travel the world with Traveling Friends'
+					content='Travel the world with Travel.'
 				/>
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>

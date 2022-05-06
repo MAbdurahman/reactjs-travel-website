@@ -14,7 +14,7 @@ export default function Home() {
 	const [signUpModal] = useState('signUpModal');
 	const [signInModal] = useState('signInModal');
 	const [state] = useState({
-		heading: 'We are traveling friends',
+		heading: 'We are Travel.',
 		paragraph:
 			'We travel to the most famous and beautiful places in the world.',
 	});
@@ -26,10 +26,10 @@ export default function Home() {
 	return (
 		<>
 			<Helmet>
-				<title>Traveling Friends</title>
+				<title>Travel.</title>
 				<meta
 					name='description'
-					content='Travel the world with Traveling Friends'
+					content='Travel the world with Travel.'
 				/>
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>
