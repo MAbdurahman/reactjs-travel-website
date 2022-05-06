@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 export default function Destinations() {
 	const [state] = useState({
 		heading:
-			'Discover the most engaging places in the world with Travel',
+			'Discover the most engaging places in the world with TRAVEL',
 		paragraph:
 			'Traveling is a brutality. It forces you to trust strangers and to lose sight of all that familiar comfort of home and friends. You are constantly off balance. Nothing is yours except the essential things: air, sleep, dreams, sea, the sky - all things tending towards the eternal or what we imagine of it. -- Cesare Pavevese',
 	});
