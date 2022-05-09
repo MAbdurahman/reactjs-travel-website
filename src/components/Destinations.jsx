@@ -1,6 +1,10 @@
 import React, { useContext, useState } from 'react';
+import DestinationContext from './../contexts/destinationContext'
+
 
 export default function Destinations() {
+	const {destinationData: {destinations}} = useContext(DestinationContext)
+	
 	const [state] = useState({
 		heading:
 			'Discover the most engaging places in the world with TRAVEL',
