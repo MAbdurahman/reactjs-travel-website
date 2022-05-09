@@ -1,4 +1,4 @@
-export const destinations = [
+const destinations = [
 	{
 		id: 1,
 		name: 'UK',
@@ -80,3 +80,5 @@ export const destinations = [
 		currency: 'Lira',
 	},
 ];
+
+export default destinations;
