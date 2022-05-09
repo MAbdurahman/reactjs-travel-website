@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import DestinationContext from './../contexts/destinationContext'
+import DestinationsList from './DestinationsList';
 
 
 export default function Destinations() {
@@ -14,13 +15,23 @@ export default function Destinations() {
 	return (
 		<div className='destinations'>
 			<div className='container'>
-				<div className='row'>
+				<div className='row ml-minus-15 mr-minus-15'>
 					<div className='col-6 p-15'>
 						<h3 className='destinations__heading'>{state.heading}</h3>
 					</div>
 					<div className='col-6 p-15'>
 						<p className='destinations__paragraph'>{state.paragraph}</p>
 					</div>
+				</div>
+			</div>
+			<div className='destinations_block'>
+				<div className='row ml-minus-15 mr-minus-15'>
+					{destinations.map(destination => (
+						<DestinationsList
+							destination={destination}
+							key={destination.id}
+						/>
+					))}
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,7 @@
 }
 @for $i from 1 through 12 {
 	.col-#{$i} {
-		width: 100% / 12 * $i;
+		width: calc(100% / 12 )* $i;
 		@if $i == 6 {
 			@include responsive(small) {
 				width: 100%;
@@ -17,7 +17,7 @@
 		}
 		@if $i == 3 {
 			@include responsive(medium) {
-				width: 100% / 12 * 4;
+				width: calc(100% / 12) * 4;
 			}
 			@include responsive(small) {
 				width: 50%;
