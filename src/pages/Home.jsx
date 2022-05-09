@@ -6,6 +6,7 @@ import ModalContext from './../contexts/modalContext';
 import { OPEN_MODAL } from '../contexts/types/modalTypes';
 import SignIn from './../auth/SignIn';
 import SignUp from './../auth/SignUp'
+import Destinations from './../components/Destinations';
 
 export default function Home() {
 	//**************** variables ****************//
@@ -13,7 +14,7 @@ export default function Home() {
 	const [signUpModal] = useState('signUpModal');
 	const [signInModal] = useState('signInModal');
 	const [state] = useState({
-		heading: 'We are travelling friends',
+		heading: 'We are Travel.',
 		paragraph:
 			'We travel to the most famous and beautiful places in the world.',
 	});
@@ -25,10 +26,10 @@ export default function Home() {
 	return (
 		<>
 			<Helmet>
-				<title>Travelling Friends</title>
+				<title>Travel.</title>
 				<meta
 					name='description'
-					content='Travel the world with Travelling Friends'
+					content='Travel the world with Travel.'
 				/>
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>
@@ -43,6 +44,7 @@ export default function Home() {
 			<Modal current={signInModal}>
 				<SignIn currentModal={signUpModal} />
 			</Modal>
+			<Destinations />
 		</>
 	);
 }

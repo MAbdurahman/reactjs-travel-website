@@ -8,7 +8,7 @@ export default function About() {
 				<title>About Us</title>
 				<meta
 					name='description'
-					content='Travel the world with Travelling Friends'
+					content='Travel the world with Travel.'
 				/>
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>

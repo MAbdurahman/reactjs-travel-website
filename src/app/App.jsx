@@ -9,6 +9,7 @@ import Navigation from './../components/Navigation'
 import Hamburger from './../components/Hamburger'
 import ModalProvider from './../contexts/providers/modalProvider';
 import NavProvider from './../contexts/providers/navProvider';
+import DestinationsProvider from './../contexts/providers/destinationsProvider'
 
 export default function App() {
 	
@@ -16,16 +17,18 @@ export default function App() {
 		<Router>
 			<ModalProvider>
 				<NavProvider>
-					<Hamburger />
-					<Navigation />
-					<HelmetProvider>
-						<Switch>
-							<Route path='/' exact component={Home} />
-							<Route path='/about' exact component={About} />
-							<Route path='/contact' exact component={Contact} />
-							<Route component={NotFound} />
-						</Switch>
-					</HelmetProvider>
+					<DestinationsProvider>
+						<Hamburger />
+						<Navigation />
+						<HelmetProvider>
+							<Switch>
+								<Route path='/' exact component={Home} />
+								<Route path='/about' exact component={About} />
+								<Route path='/contact' exact component={Contact} />
+								<Route component={NotFound} />
+							</Switch>
+						</HelmetProvider>
+					</DestinationsProvider>
 				</NavProvider>
 			</ModalProvider>
 		</Router>
