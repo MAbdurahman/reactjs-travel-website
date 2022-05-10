@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import DestinationContext from './../contexts/destinationContext'
 import { DETAILS } from './../contexts/types/destinationTypes'
 import Header from './../components/Header'
+import DestinationInfo from './../components/DestinationInfo'
 
 
 export default function Details() {
@@ -23,6 +24,7 @@ export default function Details() {
 				<title>{details.name}</title>
 			</Helmet>
 			<Header heading={details.name} image={details.bigImage}></Header>
+			<DestinationInfo details={details} />
 		</>
 	);
 }

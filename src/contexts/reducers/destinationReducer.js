@@ -2,7 +2,7 @@ import { DETAILS, CITIES } from '../types/destinationTypes';
 
 const DestinationReducer = (state, action) => {
 	const { type, payload } = action;
-	console.log(typeof payload);
+	
 	if (type === DETAILS) {
 		const destination = state.destinations.find(
 			destination => destination.id === parseInt(payload)
