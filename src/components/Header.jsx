@@ -21,6 +21,9 @@ export default function Header({ heading, paragraph, children, image }) {
 				</div>
 			</div>
 			<div className='header__video'>
+				{image ? (
+					<LazyLoadImage src={image} alt={image} />
+				) : (
 				<video
 					id='video_background'
 					autoPlay
@@ -33,6 +36,7 @@ export default function Header({ heading, paragraph, children, image }) {
 					<source src={state.video3} type='video/ogg' />
 					Your browser does not support the video tag.
 				</video>
+				)}
 				<div className='header__contents'>
 					<div className='container'>
 						<div className='header__contents__text'>

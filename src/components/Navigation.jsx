@@ -4,7 +4,7 @@ import NavContext from './../contexts/navContext';
 
 export default function Navigation() {
 	//**************** variables ****************//
-   const { state } = useContext(NavContext);
+   const { state, dispatch } = useContext(NavContext);
 
 	return (
 		<>

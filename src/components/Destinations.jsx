@@ -4,7 +4,7 @@ import DestinationsList from './DestinationsList';
 
 
 export default function Destinations() {
-	const {destinationData: {destinations}} = useContext(DestinationContext)
+	const {destinationsData: {destinations}} = useContext(DestinationContext)
 	
 	const [state] = useState({
 		heading:

@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Home from './../pages/Home';
 import About from './../pages/About';
 import Contact from './../pages/Contact';
+import Details from './../pages/Details';
 import NotFound from '../pages/NotFound';
 import Navigation from './../components/Navigation'
 import Hamburger from './../components/Hamburger'
@@ -24,6 +25,7 @@ export default function App() {
 							<Switch>
 								<Route path='/' exact component={Home} />
 								<Route path='/about' exact component={About} />
+								<Route path='/details/:id' exact component={Details} />
 								<Route path='/contact' exact component={Contact} />
 								<Route component={NotFound} />
 							</Switch>

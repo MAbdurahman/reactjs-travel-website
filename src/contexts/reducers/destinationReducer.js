@@ -1,4 +1,5 @@
 import { DETAILS, CITIES } from '../types/destinationTypes';
+
 const DestinationReducer = (state, action) => {
 	const { type, payload } = action;
 	console.log(typeof payload);
