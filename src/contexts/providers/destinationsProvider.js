@@ -4,11 +4,12 @@ import DestinationReducer from './../reducers/destinationReducer';
 import Destinations from './../../data/destinations';
 
 const DestinationsProvider = props => {
-	const [destinationData, dispatch] = useReducer(DestinationReducer, {
+	const [destinationsData, dispatch] = useReducer(DestinationReducer, {
 		destinations: Destinations,
+		details: {},
 	});
 	return (
-		<DestinationContext.Provider value={{ destinationData, dispatch }}>
+		<DestinationContext.Provider value={{ destinationsData, dispatch }}>
 			{props.children}
 		</DestinationContext.Provider>
 	);
