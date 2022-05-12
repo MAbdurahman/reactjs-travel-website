@@ -5,7 +5,7 @@ import Modal from './../components/Modal';
 import ModalContext from './../contexts/modalContext';
 import { OPEN_MODAL } from '../contexts/types/modalTypes';
 import SignIn from './../auth/SignIn';
-import SignUp from './../auth/SignUp'
+import SignUp from './../auth/SignUp';
 import Destinations from './../components/Destinations';
 
 export default function Home() {
@@ -20,17 +20,17 @@ export default function Home() {
 	});
 	//**************** functions ****************//
 	const openModal = () => {
-		dispatch({ type: OPEN_MODAL, payload: signUpModal});
+		dispatch({ type: OPEN_MODAL, payload: signUpModal });
 	};
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
 			<Helmet>
 				<title>Travel.</title>
-				<meta
-					name='description'
-					content='Travel the world with Travel.'
-				/>
+				<meta name='description' content='Travel the world with Travel.' />
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>
 			<Header heading={state.heading} paragraph={state.paragraph}>
