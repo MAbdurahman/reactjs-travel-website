@@ -17,7 +17,9 @@ export default function Details() {
 	useEffect(() => {
 		dispatch({ type: DETAILS, payload: id });
 		dispatch({ type: CITIES, payload: id });
+		window.scrollTo(0, 0);
 	}, [dispatch, id]);
+
 	return (
 		<>
 			<Helmet>
