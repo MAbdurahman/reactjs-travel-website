@@ -22,6 +22,7 @@ export default function Home() {
 	const openModal = () => {
 		dispatch({ type: OPEN_MODAL, payload: signUpModal });
 	};
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
