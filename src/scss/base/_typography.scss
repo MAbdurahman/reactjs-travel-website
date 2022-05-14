@@ -6,12 +6,11 @@
 html {
 	// 10 / 16 * 100 = 62.5%
 	font-size: 62.5%;
-	// scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: $font-ff;
-
 }
 ul {
 	list-style-type: none;
