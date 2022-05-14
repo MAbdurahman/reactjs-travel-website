@@ -2,22 +2,22 @@ const services = [
 	{
 		id: 1,
 		heading: 'Travel guides',
-		p: 'In each country we have travel guides, they will help you throughout the tour and they are very friendly you can ask them any question and they will never mind.',
+		p: 'Our travel guides will do their utmost to give you the best and most up-to-date information on your travel destinations.',
 	},
 	{
 		id: 2,
 		heading: '5 star hotels',
-		p: 'We have contracted with 5-star hotels in the available destinations, in those hotels, you will have all facilities ',
+		p: 'Browse and save on our selection of luxurious 5 Star Hotels in your travel destination region.  Each of them provide top-notch services and amenities.',
 	},
 	{
 		id: 3,
-		heading: 'Free diner',
-		p: 'Some of our packages have free diner for that you can check our packages',
+		heading: 'Free dining',
+		p: 'Some packages offer free dining plans for you and your family to gather, eat, and create great memories.  Find a plan that is suitable!',
 	},
 	{
 		id: 4,
-		heading: 'Rooms for couples',
-		p: "We have good facilities for couples, in 5-star hotels, we room for couples, that's why peoples love our tours. ",
+		heading: 'Couples Retreats',
+		p: "Whether you are longing to play, reconnect, or just spend some uninterrupted time together, we have from beachy resorts to glamping adventures and relationship-building activities.",
 	},
 ];
 

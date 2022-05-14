@@ -7,6 +7,7 @@ import { OPEN_MODAL } from '../contexts/types/modalTypes';
 import SignIn from './../auth/SignIn';
 import SignUp from './../auth/SignUp';
 import Destinations from './../components/Destinations';
+import Services from './../components/services/Services'
 
 export default function Home() {
 	//**************** variables ****************//
@@ -46,6 +47,7 @@ export default function Home() {
 				<SignIn currentModal={signUpModal} />
 			</Modal>
 			<Destinations />
+			<Services />
 		</>
 	);
 }
