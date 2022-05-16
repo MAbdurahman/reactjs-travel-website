@@ -1,0 +1,26 @@
+import React, { useContext, useState } from 'react';
+import SharedContext from './../../contexts/sharedContext';
+import ReviewBody from './ReviewBody';
+
+export default function Reviews() {
+	//**************** variables ****************//
+	const [heading] = useState('What our customers are saying?');
+	const {
+		sharedData: { reviews },
+	} = useContext(SharedContext);
+
+	return (
+		<div className='reviews'>
+			<div className='container'>
+				<h2 className='heading'>{heading}</h2>
+				<div className='row ml-minus-15 mr-minus-15'>
+					{reviews.length > 0
+						? reviews.map((review, index) => (
+								<ReviewBody key={index} review={review} />
+						))
+						: ''}
+				</div>
+			</div>
+		</div>
+	);
+}
