@@ -1,71 +1,75 @@
 const reviews = [
 	{
 		id: 1,
-		name: 'ali',
+		name: 'vanessa',
 		comment:
-			"That's great travel agency so far I see with great team and user friendly",
+			'At first, I was a little nervous about booking my trip online, but everything worked out perfect.  Excellent hotels.  Thanks Travel!',
 		stars: 4,
-		image: '/assets/reviewUsers/user1.jpg',
+		image: '/assets/reviewers/reviewer-1.jpg',
 	},
 	{
 		id: 2,
-		name: 'alex',
+		name: 'donald',
 		comment:
-			'I suggest travel friends to everyone because I love travel friends',
+			'Our trip was one of the most exceptional international journey that my wife and I have had.  Exceptional Travel!',
 		stars: 5,
-		image: '/assets/reviewUsers/user2.jpg',
+		image: '/assets/reviewers/reviewer-2.jpg',
 	},
 	{
 		id: 3,
-		name: 'andrison',
-		comment: 'One my favorite travel website',
-		stars: 3,
-		image: '/assets/reviewUsers/user3.jpg',
+		name: 'brooke',
+		comment:
+			'From start to finish, our travel was fantastic.  Travel responded promptly to our needs and concerns; thus contributing greatly to our enjoyable trip.',
+		stars: 4,
+		image: '/assets/reviewers/reviewer-3.jpg',
 	},
 	{
 		id: 4,
-		name: 'brad hussy',
-		comment: 'I love the hotels which are associated with travel friends.',
+		name: 'ahmed',
+		comment:
+			'Our travel guide was very knowledgeable about the many options available for our beach get-away.  The staff was very accommodating and courteous.',
 		stars: 5,
-		image: '/assets/reviewUsers/user4.jpg',
+		image: '/assets/reviewers/reviewer-4.jpg',
 	},
 	{
 		id: 5,
-		name: 'rahul gandi',
+		name: 'samantha',
 		comment:
-			'Me and my wife both are big fans of the travel friends website because they have everything that you want, 5-star rooms, friendly tour guides, cheap packages, and special discounts for couples, my final words must do one tour with travel friends after you also love travel friends.',
+			'The best experience with a travel agency I have ever had!  The planning and timing by Travel was great.  Accommodations was at least a 4 star hotel.',
 		stars: 5,
-		image: '/assets/reviewUsers/user6.jpg',
+		image: '/assets/reviewers/reviewer-5.jpg',
 	},
 	{
 		id: 6,
-		name: 'shakil khan',
+		name: 'amanda',
 		comment:
-			"I love the facilities especially when I reached to USA, travel friend's car was present there for me.",
-		stars: 2,
-		image: '/assets/reviewUsers/user5.jpg',
+			'I love the facilities especially when I reached to USA. Travel had a car waiting for me.',
+		stars: 4,
+		image: '/assets/reviewers/reviewer-6.jpg',
 	},
 	{
 		id: 7,
-		name: 'newton roy',
-		comment: 'Thank you travel friends for the great adventure.',
+		name: 'alyssa',
+		comment:
+			'Very committed to services with the proper follow up.  Services from the travel guides was second to none!',
 		stars: 5,
-		image: '/assets/reviewUsers/user7.jpg',
+		image: '/assets/reviewers/reviewer-7.jpg',
 	},
 	{
 		id: 8,
-		name: 'alex jobs',
+		name: 'juan',
 		comment:
-			'I did travel with some other agencies as well but travel friends is more professional than others.',
+			'We returned from out trip with many happy memories, due mainly to Travel.  The package was reasonable.',
 		stars: 5,
-		image: '/assets/reviewUsers/user8.jpg',
+		image: '/assets/reviewers/reviewer-8.jpg',
 	},
 	{
 		id: 9,
-		name: 'sikandar khan',
-		comment: '100% recommended to everyone',
+		name: 'marcus',
+		comment:
+			'My wife and I are big fans of the Travel, because they had everything that we could want.  Awesome!',
 		stars: 5,
-		image: '/assets/reviewUsers/user9.jpg',
+		image: '/assets/reviewers/reviewer-9.jpg',
 	},
 ];
 export default reviews;

@@ -8,6 +8,7 @@ import SignIn from './../auth/SignIn';
 import SignUp from './../auth/SignUp';
 import Destinations from './../components/Destinations';
 import Services from './../components/services/Services'
+import Reviews from './../components/reviews/Reviews'
 
 export default function Home() {
 	//**************** variables ****************//
@@ -48,6 +49,7 @@ export default function Home() {
 			</Modal>
 			<Destinations />
 			<Services />
+			<Reviews />
 		</>
 	);
 }
