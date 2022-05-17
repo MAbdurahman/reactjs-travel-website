@@ -6,8 +6,8 @@ const services = [
 	},
 	{
 		id: 2,
-		heading: '5 star hotels',
-		p: 'Browse and save on our selection of luxurious 5 Star Hotels in your travel destination region.  Each of them provide top-notch services and amenities.',
+		heading: 'luxury hotels',
+		p: 'Browse and save on our selection of luxurious hotels in your travel destination region.  Each of them provide top-notch services and amenities.',
 	},
 	{
 		id: 3,

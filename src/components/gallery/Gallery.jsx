@@ -8,7 +8,6 @@ export default function Gallery() {
 	const [heading] = useState('Travel Captured Images');
 	const {
 		galleryStore: { galleryImages, lightBoxStatus },
-		dispatch,
 	} = useContext(GalleryContext);
 
 	return (
@@ -24,7 +23,7 @@ export default function Gallery() {
 										key={index}
 										galleryImage={galleryImage}
 									/>
-							  ))
+							))
 							: ''}
 					</div>
 				</div>
