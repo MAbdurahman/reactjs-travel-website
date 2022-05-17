@@ -7,8 +7,9 @@ import { OPEN_MODAL } from '../contexts/types/modalTypes';
 import SignIn from './../auth/SignIn';
 import SignUp from './../auth/SignUp';
 import Destinations from './../components/Destinations';
-import Services from './../components/services/Services'
-import Reviews from './../components/reviews/Reviews'
+import Services from './../components/services/Services';
+import Reviews from './../components/reviews/Reviews';
+import Gallery from './../components/gallery/Gallery';
 
 export default function Home() {
 	//**************** variables ****************//
@@ -24,7 +25,7 @@ export default function Home() {
 	const openModal = () => {
 		dispatch({ type: OPEN_MODAL, payload: signUpModal });
 	};
-	
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -50,6 +51,7 @@ export default function Home() {
 			<Destinations />
 			<Services />
 			<Reviews />
+			<Gallery />
 		</>
 	);
 }

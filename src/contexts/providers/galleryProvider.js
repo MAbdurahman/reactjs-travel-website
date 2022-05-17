@@ -1,12 +1,12 @@
 import React, { useReducer } from 'react';
 import GalleryContext from './../galleryContext';
 import GalleryReducer from '../reducers/galleryReducer';
-import Gallery from './../../data/gallery';
+import GalleryImages from './../../data/gallery';
 
 const GalleryProvider = props => {
 	//**************** variables ****************//
 	const [galleryStore, dispatch] = useReducer(GalleryReducer, {
-		gallery: Gallery,
+		galleryImages: GalleryImages,
 		lightBoxStatus: false,
 		currentLightBox: {},
 	});
