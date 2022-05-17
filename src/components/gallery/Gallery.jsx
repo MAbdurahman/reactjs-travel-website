@@ -13,14 +13,18 @@ export default function Gallery() {
 
 	return (
 		<>
+			{lightBoxStatus ? <LightBox /> : ''}
 			<div className='gallery'>
 				<div className='container'>
 					<h2 className='heading mb-55'>{heading}</h2>
 					<div className='row'>
 						{galleryImages.length > 0
 							? galleryImages.map((galleryImage, index) => (
-									<GalleryImage key={index} galleryImage={galleryImage} />
-                  ))
+									<GalleryImage
+										key={index}
+										galleryImage={galleryImage}
+									/>
+							  ))
 							: ''}
 					</div>
 				</div>
