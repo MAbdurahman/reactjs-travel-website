@@ -51,7 +51,7 @@ const gallery = [
 	},
 	{
 		id: 11,
-		name: 'United State of America',
+		name: 'United States of America',
 		image: '/assets/gallery/usa.jpg',
 	},
 	{

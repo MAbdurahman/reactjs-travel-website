@@ -35,7 +35,7 @@ const reviews = [
 		id: 5,
 		name: 'samantha',
 		comment:
-			'The best experience with a travel agency I have ever had!  The planning and timing by Travel was great.  Accommodations was at least a 4 star hotel.',
+			'The best experience with a travel agency I have ever had!  The planning and timing by Travel was great.  Accommodations was at least a 4 star!',
 		stars: 5,
 		image: '/assets/reviewers/reviewer-5.jpg',
 	},
@@ -67,7 +67,7 @@ const reviews = [
 		id: 9,
 		name: 'marcus',
 		comment:
-			'My wife and I are big fans of the Travel, because they had everything that we could want.  Awesome!',
+			'My wife and I are big fans of Travel, because they had everything that we could want.  Awesome!',
 		stars: 5,
 		image: '/assets/reviewers/reviewer-9.jpg',
 	},
