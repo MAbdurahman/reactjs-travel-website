@@ -1,11 +1,36 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { BsChevronRight } from 'react-icons/bs';
 
-const FooterLinksDisplay = () => {
-   return (
-      <div>
-         <h2>footerLinksDisplay</h2>
-      </div>
-   )
-}
+const FooterLinksDisplay = ({ links, external }) => {
+
+	return links.map(link => (
+		<ul className='footer__ul' key={link.id}>
+			<li className='footer__ul__li'>
+				{external ? (
+					<>
+						<BsChevronRight size={12} />
+						<a href={link.route} target='_blank' rel='noreferrer'>
+							{link.name}
+						</a>
+					</>
+				) : (
+					<>
+						<BsChevronRight size={12} />
+						<Link
+							to={
+								link.hasOwnProperty('route')
+									? link.route
+									: `/details/${link.id}`
+							}
+						>
+							{link.name}
+						</Link>
+					</>
+				)}
+			</li>
+		</ul>
+	));
+};
 
 export default FooterLinksDisplay;

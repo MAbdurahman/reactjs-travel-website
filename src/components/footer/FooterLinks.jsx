@@ -8,7 +8,6 @@ const FooterLinks = () => {
 		destinationsData: { destinations },
 	} = useContext(DestinationContext);
 
-   console.log(destinations)
 	const [state] = useState({
 		pages: [
 			{ id: 1, name: 'home', route: '/' },
@@ -31,8 +30,19 @@ const FooterLinks = () => {
 	const { headings, pages, partners } = state;
 
 	return (
-		<div>
-			<h2>footer links</h2>
+		<div className='row'>
+			<div className='col-4 p-15'>
+				<h3 className='footer__heading'>{headings.pages}</h3>
+				<FooterLinksDisplay links={pages} />
+			</div>
+			<div className='col-4 p-15'>
+				<h3 className='footer__heading'>{headings.partners}</h3>
+				<FooterLinksDisplay links={partners} external={true} />
+			</div>
+			<div className='col-4 p-15'>
+				<h3 className='footer__heading'>{headings.destinations}</h3>
+				<FooterLinksDisplay links={destinations} />
+			</div>
 		</div>
 	);
 };

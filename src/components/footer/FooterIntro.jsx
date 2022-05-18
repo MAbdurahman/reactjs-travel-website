@@ -5,7 +5,7 @@ const FooterIntro = () => {
 	//**************** variables ****************//
 	const [state] = useState({
 		logo: '/assets/footer/logo.png',
-		intro: 'We arrange tours to some of the world\'s most beautiful and famous places.  We offer business travel, group tours, family travel, adventure touring and much more.  We passionately provide services to one client, one destination, one team member, one event, one travel experience at a time.  Our business is Service!',
+		intro: "We arrange tours to some of the world's most beautiful and famous places.  We offer business travel, family travel, group tours, adventure tours, and much more.  We passionately provide services to one client, one destination, one team member, one event, one travel experience at a time.  Our business is Service!",
 	});
 	return (
 		<div className='footer__intro'>
