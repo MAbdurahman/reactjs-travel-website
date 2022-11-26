@@ -29,7 +29,7 @@ export default function Header({ heading, paragraph, children, image }) {
 					autoPlay
 					loop
 					muted
-					poster={state.poster}
+					/* poster={state.poster} */
 				>
 					<source src={state.video1} type='video/mp4' />
 					<source src={state.video2} type='video/webm' />
