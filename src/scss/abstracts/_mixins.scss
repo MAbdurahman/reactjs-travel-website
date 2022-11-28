@@ -54,10 +54,13 @@
 	$name,
 	$duration,
 	$timeFunction,
+	$delay: 0,
+	$count: 1,
+	$fillMode: 'forwards',
 	$translate1,
 	$translate2
 ) {
-	animation: $name $duration $timeFunction;
+	animation: $name $duration $timeFunction $delay+ms $count $fillMode;
 	@keyframes #{$name} {
 		0% {
 			opacity: 0;

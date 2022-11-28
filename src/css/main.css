@@ -633,7 +633,8 @@ a {
   font-size: 4.2rem;
   line-height: 2.7rem;
   letter-spacing: 2px;
-  animation: heading 1s ease-in;
+  opacity: 0;
+  animation: heading 1s ease-in 2600ms 1 forwards;
 }
 @keyframes heading {
   0% {
@@ -653,7 +654,8 @@ a {
   font-size: 1.5rem;
   font-size: 2rem;
   letter-spacing: 1px;
-  animation: subHeading 1s ease-out;
+  opacity: 0;
+  animation: subHeading 1s ease-out 2600ms 1 forwards;
 }
 @keyframes subHeading {
   0% {
@@ -667,7 +669,8 @@ a {
 }
 .header__contents__text__child__link {
   margin-top: 1rem;
-  animation: headerButton 1s ease-in;
+  opacity: 0;
+  animation: headerButton 1s ease-in 2650ms 1 forwards;
 }
 @keyframes headerButton {
   0% {
@@ -1147,7 +1150,7 @@ a {
   padding: 2rem;
   font-size: 1.4rem;
   letter-spacing: 1px;
-  animation: modelAnimate 0.5s linear;
+  animation: modelAnimate 0.5s linear 0ms 1 forwards;
 }
 @keyframes modelAnimate {
   0% {

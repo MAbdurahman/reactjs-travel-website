@@ -1,4 +1,3 @@
-
 /* =========================================
             Preloader
 ============================================ */
@@ -10,15 +9,10 @@ $(window).on('load', function () {
 	// $('#preloader').removeAttr('style').hide();
 });
 
-
 /* $(function () {
-	const preloader = document.getElementById('preloader');
-	const gif = document.getElementById('preloader-gif');
+	$('.header__contents__text__child__h1').style.display = 'none';
+}); */
 
-	preloader.style.display = 'none';
-	gif.style.display = 'none';
-});
- */
 /* =========================================
             Simple-Scroll-Spy
 ============================================ */

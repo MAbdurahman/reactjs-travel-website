@@ -51,10 +51,14 @@
 					font-size: 4.2rem;
 					line-height: 2.7rem;
 					letter-spacing: 2px;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						heading,
 						1s,
 						ease-in,
+						2600,
+						1,
+						forwards,
 						-8rem,
 						0
 					);
@@ -67,20 +71,28 @@
 					font-size: 1.5rem;
 					font-size: 2rem;
 					letter-spacing: 1px;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						subHeading,
 						1s,
 						ease-out,
+						2600,
+						1,
+						forwards,
 						-10rem,
 						0
 					);
 				}
 				&__link {
 					margin-top: 1rem;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						headerButton,
 						1s,
 						ease-in,
+						2650,
+						1,
+						forwards,
 						8rem,
 						0
 					);
