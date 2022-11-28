@@ -962,13 +962,17 @@ a {
   display: inline-block;
   font-size: 1.4rem;
   font-weight: 600;
-  border-radius: 0.2rem;
+  border-radius: 5px;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.333s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.btn-default:hover {
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 @media (max-width: 36em) {
   .btn-default {
@@ -987,12 +991,14 @@ a {
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.333s ease-in-out;
+  }
+  .btn-default:hover {
+    background: linear-gradient(to right, #ff4d58, #ff4d58);
   }
 }
 .btn-default:hover {
-  color: white;
-  background-color: #df2189;
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 
 .btn-dark {
@@ -1011,8 +1017,11 @@ a {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-dark:hover {
+  background: linear-gradient(to right, #1c1d1f, #1c1d1f);
 }
 @media (max-width: 36em) {
   .btn-dark {
@@ -1031,7 +1040,10 @@ a {
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.333s ease-in-out;
+  }
+  .btn-dark:hover {
+    background: linear-gradient(to right, #1c1d1f, #1c1d1f);
   }
 }
 
@@ -1051,8 +1063,11 @@ a {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-dark-sm:hover {
+  background: linear-gradient(to right, #1c1d1f, #1c1d1f);
 }
 
 .btn-white {
@@ -1071,8 +1086,11 @@ a {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-white:hover {
+  background: linear-gradient(to right, #fff, #fff);
 }
 
 .btn-pink {
@@ -1091,8 +1109,11 @@ a {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-pink:hover {
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 
 .modal {

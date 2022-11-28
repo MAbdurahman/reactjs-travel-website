@@ -1,13 +1,12 @@
 @use './../abstracts/' as *;
 .btn-default {
-	@include button($main1, $main2, $white, 4.5rem, 1.4rem, 0.2rem, 0, 2rem);
+	@include button($main1, $main2, $white, 4.5rem, 1.4rem, 5px, 0, 2rem);
 	@include responsive(xsmall) {
 		@include button($main1, $main2, $white, 4rem, 1.3rem, 0.2rem, 0, 2rem);
 	}
-
+	transition: background 0.5s ease-in-out;
 	&:hover {
-		color: white;
-		background-color: $main2;
+		background: linear-gradient(to right, $main1, $main1);
 	}
 }
 .btn-dark {

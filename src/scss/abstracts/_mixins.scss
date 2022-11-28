@@ -44,7 +44,11 @@
 	outline: none;
 	cursor: pointer;
 	text-transform: uppercase;
-	transition: all 0.3s ease-in-out;
+	transition: background 0.333s ease-in-out;
+
+	&:hover {
+		background: linear-gradient(to right, $color1, $color1);
+	}
 }
 @mixin animateMoveUpOrDown(
 	$name,
