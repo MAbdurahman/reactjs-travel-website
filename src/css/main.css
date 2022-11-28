@@ -384,7 +384,9 @@ body {
   width: 100%;
   min-height: 100%;
   /* 	padding-bottom: 400px; */
-  background-color: white;
+  background-color: hsl(0deg, 19%, 94%);
+  background-color: hsl(0deg, 29%, 97%);
+  background-color: hsl(45deg, 29%, 97%);
   overflow-x: hidden;
 }
 
@@ -629,9 +631,10 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 4.2rem;
-  line-height: 3rem;
+  line-height: 2.7rem;
   letter-spacing: 2px;
-  animation: heading 1s ease-in;
+  opacity: 0;
+  animation: heading 1s ease-in 2600ms 1 forwards;
 }
 @keyframes heading {
   0% {
@@ -644,11 +647,15 @@ a {
   }
 }
 .header__contents__text__child__p {
-  margin-top: 1rem;
+  margin-top: 0.7rem;
+  margin-top: -1.25rem;
+  margin-bottom: 3rem;
   color: #fff;
   font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
-  animation: subHeading 1s ease-out;
+  opacity: 0;
+  animation: subHeading 1s ease-out 2600ms 1 forwards;
 }
 @keyframes subHeading {
   0% {
@@ -662,7 +669,8 @@ a {
 }
 .header__contents__text__child__link {
   margin-top: 1rem;
-  animation: headerButton 1s ease-in;
+  opacity: 0;
+  animation: headerButton 1s ease-in 2650ms 1 forwards;
 }
 @keyframes headerButton {
   0% {
@@ -956,13 +964,18 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.4rem;
-  font-weight: 400;
-  border-radius: 0.2rem;
+  font-weight: 600;
+  border-radius: 5px;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.333s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.btn-default:hover {
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 @media (max-width: 36em) {
   .btn-default {
@@ -974,14 +987,21 @@ a {
     letter-spacing: 1px;
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 0.2rem;
     padding: 0 2rem;
     border: none;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    transition: background 0.333s ease-in-out;
   }
+  .btn-default:hover {
+    background: linear-gradient(to right, #ff4d58, #ff4d58);
+  }
+}
+.btn-default:hover {
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 
 .btn-dark {
@@ -993,14 +1013,18 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.4rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-dark:hover {
+  background: linear-gradient(to right, #1c1d1f, #1c1d1f);
 }
 @media (max-width: 36em) {
   .btn-dark {
@@ -1012,13 +1036,17 @@ a {
     letter-spacing: 1px;
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 0.4rem;
     padding: 0 2rem;
     border: none;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    transition: background 0.333s ease-in-out;
+  }
+  .btn-dark:hover {
+    background: linear-gradient(to right, #1c1d1f, #1c1d1f);
   }
 }
 
@@ -1031,14 +1059,18 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.4rem;
   padding: 0 1.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-dark-sm:hover {
+  background: linear-gradient(to right, #1c1d1f, #1c1d1f);
 }
 
 .btn-white {
@@ -1050,14 +1082,18 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.3rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-white:hover {
+  background: linear-gradient(to right, #fff, #fff);
 }
 
 .btn-pink {
@@ -1069,14 +1105,18 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.3rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.333s ease-in-out;
   letter-spacing: 0.1rem;
+}
+.btn-pink:hover {
+  background: linear-gradient(to right, #ff4d58, #ff4d58);
 }
 
 .modal {
@@ -1110,7 +1150,7 @@ a {
   padding: 2rem;
   font-size: 1.4rem;
   letter-spacing: 1px;
-  animation: modelAnimate 0.5s linear;
+  animation: modelAnimate 0.5s linear 0ms 1 forwards;
 }
 @keyframes modelAnimate {
   0% {

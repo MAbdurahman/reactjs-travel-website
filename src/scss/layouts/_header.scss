@@ -49,35 +49,50 @@
 					text-transform: uppercase;
 					font-weight: 900;
 					font-size: 4.2rem;
-					line-height: 3rem;
+					line-height: 2.7rem;
 					letter-spacing: 2px;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						heading,
 						1s,
 						ease-in,
+						2600,
+						1,
+						forwards,
 						-8rem,
 						0
 					);
 				}
 				&__p {
-					margin-top: 1rem;
+					margin-top: .7rem;
+					margin-top: -1.25rem;
+					margin-bottom: 3rem;
 					color: abstracts.$white;
 					font-size: 1.5rem;
+					font-size: 2rem;
 					letter-spacing: 1px;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						subHeading,
 						1s,
 						ease-out,
+						2600,
+						1,
+						forwards,
 						-10rem,
 						0
 					);
 				}
 				&__link {
 					margin-top: 1rem;
+					opacity: 0;
 					@include abstracts.animateMoveUpOrDown(
 						headerButton,
 						1s,
 						ease-in,
+						2650,
+						1,
+						forwards,
 						8rem,
 						0
 					);

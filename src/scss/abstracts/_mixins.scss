@@ -37,16 +37,30 @@
 	letter-spacing: 1px;
 	display: inline-block;
 	font-size: $fontSize;
-	font-weight: 400;
+	font-weight: 600;
 	border-radius: $bdr;
 	padding: $paddingVertical $paddingHorizontal;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	text-transform: uppercase;
+	transition: background 0.333s ease-in-out;
+
+	&:hover {
+		background: linear-gradient(to right, $color1, $color1);
+	}
 }
-@mixin animateMoveUpOrDown($name, $duration, $timeFunction, $translate1, $translate2) {
-	animation: $name $duration $timeFunction;
+@mixin animateMoveUpOrDown(
+	$name,
+	$duration,
+	$timeFunction,
+	$delay: 0,
+	$count: 1,
+	$fillMode: 'forwards',
+	$translate1,
+	$translate2
+) {
+	animation: $name $duration $timeFunction $delay+ms $count $fillMode;
 	@keyframes #{$name} {
 		0% {
 			opacity: 0;
@@ -67,7 +81,6 @@
 	background-color: $color;
 	border-radius: 5px;
 	transition: transform 0.3s linear;
-
 }
 @mixin toggleSpans($bg, $width, $height, $mt) {
 	display: block;
