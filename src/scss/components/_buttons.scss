@@ -4,6 +4,11 @@
 	@include responsive(xsmall) {
 		@include button($main1, $main2, $white, 4rem, 1.3rem, 0.2rem, 0, 2rem);
 	}
+
+	&:hover {
+		color: white;
+		background-color: $main2;
+	}
 }
 .btn-dark {
 	@include button(

@@ -384,7 +384,9 @@ body {
   width: 100%;
   min-height: 100%;
   /* 	padding-bottom: 400px; */
-  background-color: white;
+  background-color: hsl(0deg, 19%, 94%);
+  background-color: hsl(0deg, 29%, 97%);
+  background-color: hsl(45deg, 29%, 97%);
   overflow-x: hidden;
 }
 
@@ -629,7 +631,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 4.2rem;
-  line-height: 3rem;
+  line-height: 2.7rem;
   letter-spacing: 2px;
   animation: heading 1s ease-in;
 }
@@ -644,9 +646,12 @@ a {
   }
 }
 .header__contents__text__child__p {
-  margin-top: 1rem;
+  margin-top: 0.7rem;
+  margin-top: -1.25rem;
+  margin-bottom: 3rem;
   color: #fff;
   font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   animation: subHeading 1s ease-out;
 }
@@ -956,13 +961,14 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.2rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 36em) {
   .btn-default {
@@ -974,14 +980,19 @@ a {
     letter-spacing: 1px;
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 0.2rem;
     padding: 0 2rem;
     border: none;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
   }
+}
+.btn-default:hover {
+  color: white;
+  background-color: #df2189;
 }
 
 .btn-dark {
@@ -993,13 +1004,14 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.4rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   letter-spacing: 0.1rem;
 }
 @media (max-width: 36em) {
@@ -1012,13 +1024,14 @@ a {
     letter-spacing: 1px;
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 0.4rem;
     padding: 0 2rem;
     border: none;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -1031,13 +1044,14 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.4rem;
   padding: 0 1.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   letter-spacing: 0.1rem;
 }
 
@@ -1050,13 +1064,14 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.3rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   letter-spacing: 0.1rem;
 }
 
@@ -1069,13 +1084,14 @@ a {
   letter-spacing: 1px;
   display: inline-block;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.3rem;
   padding: 0 2rem;
   border: none;
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
   letter-spacing: 0.1rem;
 }
 
