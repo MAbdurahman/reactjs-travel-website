@@ -41,14 +41,16 @@ export default function SignIn(props) {
 			</div>
 			<div className='group model__row'>
 				<input type='submit' name='' className='btn-dark' value='Sign In' />
-				<p
-					style={{ display: 'inline-block', marginLeft: '4em' }}
-					onClick={() =>
-						dispatch({ type: OPEN_MODAL, payload: props.currentModal })
-					}
-				>
+				<p style={{ display: 'inline-block', marginLeft: '4em' }}>
 					Do not have an account?&nbsp;
-					<span style={{color: '#ff4d58'}}>Sign Up</span>
+					<span
+						style={{ color: '#ff4d58' }}
+						onClick={() =>
+							dispatch({ type: OPEN_MODAL, payload: props.currentModal })
+						}
+					>
+						Sign Up
+					</span>
 				</p>
 			</div>
 		</form>
