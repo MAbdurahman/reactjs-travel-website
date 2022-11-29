@@ -20,7 +20,10 @@
 		0,
 		2rem
 	);
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
+	&:hover {
+		background: linear-gradient(to right, #373636, #373636);
+	}
 	@include responsive(xsmall) {
 		@include button(
 			$blackDark,
