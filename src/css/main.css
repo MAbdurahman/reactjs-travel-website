@@ -1128,7 +1128,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1146,15 +1146,15 @@ a {
 }
 .modal__body {
   background: #fff;
-  width: 47rem;
+  width: 60rem;
   height: auto;
   padding: 2rem;
   font-size: 1.4rem;
   letter-spacing: 1px;
   border-radius: 5px;
-  animation: modelAnimate 0.5s linear 0ms 1 forwards;
+  animation: modalAnimate 0.5s linear 0ms 1 forwards;
 }
-@keyframes modelAnimate {
+@keyframes modalAnimate {
   0% {
     opacity: 0;
     transform: translateY(-10rem);
