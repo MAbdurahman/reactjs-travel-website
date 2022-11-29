@@ -21,6 +21,8 @@
 		padding: 2rem;
 		font-size: 1.4rem;
 		letter-spacing: 1px;
+		border-radius: 5px;
+		
 		@include abstracts.animateMoveUpOrDown(
 			modelAnimate,
 			0.5s,

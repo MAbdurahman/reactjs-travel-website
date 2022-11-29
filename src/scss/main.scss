@@ -5,9 +5,7 @@
 //import base
 @use './base/resets';
 @use './base/typography';
-
-//import utils
-@use './utils/utils';
+@use './base/utils';
 
 //import layouts
 @use './layouts/header';

@@ -417,6 +417,9 @@ a {
 /*=============================================
             mixins.scss
 ================================================*/
+/*=============================================
+            _utils.scss
+================================================*/
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -1148,6 +1151,7 @@ a {
   padding: 2rem;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  border-radius: 5px;
   animation: modelAnimate 0.5s linear 0ms 1 forwards;
 }
 @keyframes modelAnimate {
