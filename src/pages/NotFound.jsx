@@ -5,11 +5,12 @@ export default function NotFound() {
 	return (
 		<div>
 			<Helmet>
-				<title>Oops Not Found</title>
+				<title>Travel/ Not Found Page</title>
 				<meta
 					name='description'
 					content='Travel the world with Travel.'
 				/>
+				<meta name='description' content='Travel. Not Found' />
 				<meta name='keywords' content='travel, travel tours, airline' />
 			</Helmet>
 			<h2>notFound page</h2>

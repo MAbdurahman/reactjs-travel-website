@@ -89,7 +89,7 @@ const cities = [
 	},
 	{
 		id: 9,
-		name: 'phuket',
+		name: 'Phuket',
 		price: 250,
 		image: '/assets/cities/phuket.jpg',
 		duration: '1 day',
