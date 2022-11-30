@@ -125,7 +125,7 @@
 			@content;
 		}
 	}
-	@if $breakpoint == xsmall {
+	@if $breakpoint == x-small {
 		@media (max-width: $xsm) {
 			@content;
 		}

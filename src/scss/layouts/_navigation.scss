@@ -1,7 +1,7 @@
 /*=============================================
             _navigation
 ================================================*/
-@use '../abstracts/' as *;
+@use '../abstracts' as *;
 .nav__layer {
 	@include position(fixed, 0, 0, 0, 0, 100%, 100%);
 	background: rgba(0, 0, 0, 0.6);
