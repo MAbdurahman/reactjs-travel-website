@@ -489,20 +489,10 @@ a {
   font-family: sans-serif;
   font-size: 1.5rem;
 }
-@media (max-width: 36em) {
-  .group__textarea::placeholder {
-    font-size: 1.3rem;
-  }
-}
 
 ::placeholder {
   color: #1c1d1f;
   font-size: 1.5rem;
-}
-@media (max-width: 36em) {
-  ::placeholder {
-    font-size: 1.3rem;
-  }
 }
 
 .flex {
@@ -542,11 +532,6 @@ a {
   color: transparent;
   transform: rotate(-2deg);
   text-transform: capitalize;
-}
-@media (max-width: 36em) {
-  .heading {
-    font-size: 1.8rem;
-  }
 }
 
 .animation {
@@ -634,6 +619,7 @@ a {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 4.2rem;
+  font-size: 6rem;
   line-height: 2.7rem;
   letter-spacing: 2px;
   opacity: 0;
@@ -792,11 +778,6 @@ a {
     width: 50%;
   }
 }
-@media (max-width: 36em) {
-  .col-3 {
-    width: 100%;
-  }
-}
 
 .col-4 {
   width: 33.3333333333%;
@@ -804,11 +785,6 @@ a {
 @media (max-width: 62em) {
   .col-4 {
     width: 50%;
-  }
-}
-@media (max-width: 36em) {
-  .col-4 {
-    width: 100%;
   }
 }
 
@@ -862,12 +838,6 @@ a {
   margin-top: 8rem;
   padding: 8rem 0;
 }
-@media (max-width: 36em) {
-  .footer {
-    margin-top: 4rem;
-    padding: 4rem 0;
-  }
-}
 .footer__container {
   width: 100%;
 }
@@ -883,11 +853,6 @@ a {
     width: 13rem;
   }
 }
-@media (max-width: 36em) {
-  .footer__intro__img {
-    width: 10rem;
-  }
-}
 .footer__intro__img img {
   width: 100%;
   height: auto;
@@ -901,23 +866,12 @@ a {
   font-weight: 400;
   line-height: 2.5rem;
 }
-@media (max-width: 36em) {
-  .footer__intro__msg {
-    width: 100%;
-    font-size: 1.4rem;
-  }
-}
 .footer__heading {
   color: #000;
   text-transform: uppercase;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   margin-bottom: 2rem;
-}
-@media (max-width: 36em) {
-  .footer__heading {
-    font-size: 1.4rem;
-  }
 }
 .footer__ul {
   list-style: none;
@@ -950,11 +904,6 @@ a {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
-@media (max-width: 36em) {
-  .footer__bottom p {
-    font-size: 1rem;
-  }
-}
 
 .btn-default {
   background: linear-gradient(to right, #ff4d58, #df2189);
@@ -977,29 +926,6 @@ a {
 }
 .btn-default:hover {
   background: linear-gradient(to right, #ff4d58, #ff4d58);
-}
-@media (max-width: 36em) {
-  .btn-default {
-    background: linear-gradient(to right, #ff4d58, #df2189);
-    color: #fff;
-    text-decoration: none;
-    height: 4rem;
-    line-height: 4rem;
-    letter-spacing: 1px;
-    display: inline-block;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-radius: 0.2rem;
-    padding: 0 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background 0.333s ease-in-out;
-  }
-  .btn-default:hover {
-    background: linear-gradient(to right, #ff4d58, #ff4d58);
-  }
 }
 .btn-default:hover {
   background: linear-gradient(to right, #ff4d58, #ff4d58);
@@ -1029,29 +955,6 @@ a {
 }
 .btn-dark:hover {
   background: linear-gradient(to right, #373636, #373636);
-}
-@media (max-width: 36em) {
-  .btn-dark {
-    background: linear-gradient(to right, #1c1d1f, #1c1d1f);
-    color: #fff;
-    text-decoration: none;
-    height: 4rem;
-    line-height: 4rem;
-    letter-spacing: 1px;
-    display: inline-block;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-radius: 0.4rem;
-    padding: 0 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background 0.333s ease-in-out;
-  }
-  .btn-dark:hover {
-    background: linear-gradient(to right, #1c1d1f, #1c1d1f);
-  }
 }
 
 .btn-dark-sm {
@@ -1142,11 +1045,6 @@ a {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 1.5rem;
-}
-@media (max-width: 36em) {
-  .modal__heading h3 {
-    font-size: 1.7rem;
-  }
 }
 .modal__body {
   background: #fff;
@@ -1267,11 +1165,6 @@ a {
 .destinations {
   margin: 8rem 0;
 }
-@media (max-width: 36em) {
-  .destinations {
-    margin: 4rem 0;
-  }
-}
 .destinations__heading {
   font-size: 2.8rem;
   color: #000;
@@ -1283,13 +1176,6 @@ a {
 @media (max-width: 75em) {
   .destinations__heading {
     width: 100%;
-  }
-}
-@media (max-width: 36em) {
-  .destinations__heading {
-    font-size: 2.1rem;
-    line-height: 3.5rem;
-    text-transform: capitalize;
   }
 }
 .destinations__heading::after {
@@ -1312,11 +1198,6 @@ a {
 }
 .destinations__block {
   margin-top: 6rem;
-}
-@media (max-width: 36em) {
-  .destinations__block {
-    margin-top: 3rem;
-  }
 }
 .destinations__card {
   width: 100%;
@@ -1379,11 +1260,6 @@ a {
 .destination--info {
   margin: 8rem 0;
 }
-@media (max-width: 36em) {
-  .destination--info {
-    margin: 4rem 0;
-  }
-}
 .destination--info__p {
   font-size: 1.6rem;
   color: #777;
@@ -1415,12 +1291,6 @@ a {
   background: #f6f6fb;
   padding: 13rem 0;
   transform: skewY(-5deg);
-}
-@media (max-width: 36em) {
-  .cities {
-    margin: 4rem 0;
-    padding: 6rem 0;
-  }
 }
 .cities__container {
   transform: skewY(5deg);
@@ -1531,12 +1401,6 @@ a {
   padding: 13rem 0;
   transform: skewY(-5deg);
 }
-@media (max-width: 36em) {
-  .services {
-    margin: 4rem 0;
-    padding: 6rem 0;
-  }
-}
 .services__contents {
   transform: skewY(5deg);
 }
@@ -1567,21 +1431,10 @@ a {
     font-weight: 700;
   }
 }
-@media (max-width: 36em) {
-  .services__left__heading {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
 .services__left__paragraph {
   margin-top: 3.6rem;
   font-size: 1.6rem;
   line-height: 2.7rem;
-}
-@media (max-width: 36em) {
-  .services__left__paragraph {
-    margin-top: 2.5rem;
-  }
 }
 .services__list {
   margin-bottom: 0.5rem;
@@ -1640,11 +1493,6 @@ a {
   width: 100%;
   margin: 16rem 0;
 }
-@media (max-width: 36em) {
-  .reviews {
-    margin: 8rem 0;
-  }
-}
 .reviews__body {
   background: #f6f6fb;
   padding: 1rem;
@@ -1693,11 +1541,6 @@ a {
 .gallery {
   margin: 8rem 0;
 }
-@media (max-width: 36em) {
-  .gallery {
-    margin: 4rem 0;
-  }
-}
 .gallery__image {
   width: 100%;
   height: 22rem;
@@ -1728,12 +1571,6 @@ a {
   justify-content: center;
   flex-direction: column;
 }
-@media (max-width: 36em) {
-  .gallery__lightbox {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
 .gallery__lightbox h4 {
   color: #fff;
   font-size: 1.8rem;
@@ -1746,12 +1583,6 @@ a {
   border-radius: 0.3rem;
   overflow: hidden;
   animation: cardAnimation 0.5s linear;
-}
-@media (max-width: 36em) {
-  .gallery__lightbox__card {
-    width: 100%;
-    height: auto;
-  }
 }
 @keyframes cardAnimation {
   from {
@@ -1767,12 +1598,6 @@ a {
   width: 45rem;
   max-height: 45rem;
   overflow: hidden;
-}
-@media (max-width: 36em) {
-  .gallery__lightbox__card__image {
-    width: 100%;
-    height: 100%;
-  }
 }
 .gallery__lightbox__card__image img {
   width: 100%;

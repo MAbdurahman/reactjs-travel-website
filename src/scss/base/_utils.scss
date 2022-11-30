@@ -2,6 +2,7 @@
             _utils.scss
 ================================================*/
 @use './../abstracts/' as *;
+
 .container {
 	max-width: 1200px;
 	margin-left: auto;
@@ -20,7 +21,7 @@
 		max-width: 100%;
 		padding: 0 2rem;
 	}
-	@include responsive(xsmall) {
+	@include responsive(x-small) {
 		max-width: 100%;
 		padding: 0 1.5rem;
 	}

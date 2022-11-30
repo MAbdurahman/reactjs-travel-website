@@ -1,7 +1,7 @@
 /*=============================================
             _navigation
 ================================================*/
-@use '../abstracts/' as *;
+@use '../abstracts' as *;
 .nav__layer {
 	@include position(fixed, 0, 0, 0, 0, 100%, 100%);
 	background: rgba(0, 0, 0, 0.6);
@@ -28,7 +28,7 @@
 				font-size: 2.5rem;
 				font-weight: 400;
             letter-spacing: 1px;
-				@include responsive(xsmall) {
+				@include responsive(x-small) {
 					text-align: center;
 				}
 				&:before {
