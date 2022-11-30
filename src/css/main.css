@@ -713,8 +713,10 @@ a {
   padding: 1.5rem 3rem;
   text-align: right;
   color: #000;
+  color: #df2189;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 @media (max-width: 36em) {
