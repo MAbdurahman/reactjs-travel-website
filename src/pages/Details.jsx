@@ -23,7 +23,7 @@ export default function Details() {
 	return (
 		<>
 			<Helmet>
-				<title>{details.name}</title>
+				<title>Travel/ {details.name}</title>
 			</Helmet>
 			<Header heading={details.name} image={details.bigImage}></Header>
 			<DestinationInfo details={details} />

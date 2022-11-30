@@ -1,7 +1,7 @@
 const destinations = [
 	{
 		id: 1,
-		name: 'UK',
+		name: 'United Kingdom',
 		details:
 			'The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture. England is also site of Neolithic Stonehenge, Bath’s Roman spa and centuries-old universities at Oxford and Cambridge',
 		image: '/assets/destinations/uk.jpg',
@@ -11,9 +11,9 @@ const destinations = [
 	},
 	{
 		id: 2,
-		name: 'USA',
+		name: 'United States',
 		details:
-			'The U.S. is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles Hollywood is famed for filmmaking',
+			'The United States is a country of 50 states covering a vast swath of North America, with Alaska in the northwest and Hawaii extending the nation’s presence into the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance and culture center, and capital Washington, DC. Midwestern metropolis Chicago is known for influential architecture and on the west coast, Los Angeles Hollywood is famed for filmmaking',
 		image: '/assets/destinations/usa.jpg',
 		bigImage: '/assets/destinations/usaBig.jpg',
 		language: 'English',

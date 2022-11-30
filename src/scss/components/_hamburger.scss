@@ -32,24 +32,18 @@
 
 	span:nth-child(1) {
 		@include hamburgerSpans($main2, 50%, 4px, 0.3rem);
-		/* transform: translate(-5%, 0) rotate(-40deg);
-		transform: translate(-50%, -50%) rotate(-45deg); */
 		transform: translateY(5px) rotate(135deg);
 		width: 100%;
-
 		
 	}
 	span:nth-child(2) {
 		@include hamburgerSpans($main2, 100%, 4px, 0.5rem);
 		transform: translate(-50%, -50%) rotate(45deg);
-		opacity: 0;
+		opacity: 0; 
 		
 	}
 	span:nth-child(3) {
 		@include hamburgerSpans($main2, 50%, 4px, null);
-
-/* 		transform: translate(-100%, 0) rotate(-45deg);
-		transform: translate(50%,50% ) rotate(45deg); */
 		transform: translateY(-8px) rotate(-135deg);
 		width: 100%;
 		

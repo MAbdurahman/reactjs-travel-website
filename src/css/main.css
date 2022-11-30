@@ -1141,8 +1141,6 @@ a {
   background-color: #df2189;
   border-radius: 5px;
   transition: transform 0.333s ease-out;
-  /* transform: translate(-5%, 0) rotate(-40deg);
-  transform: translate(-50%, -50%) rotate(-45deg); */
   transform: translateY(5px) rotate(135deg);
   width: 100%;
 }
@@ -1166,8 +1164,6 @@ a {
   background-color: #df2189;
   border-radius: 5px;
   transition: transform 0.333s ease-out;
-  /* 		transform: translate(-100%, 0) rotate(-45deg);
-  		transform: translate(50%,50% ) rotate(45deg); */
   transform: translateY(-8px) rotate(-135deg);
   width: 100%;
 }
