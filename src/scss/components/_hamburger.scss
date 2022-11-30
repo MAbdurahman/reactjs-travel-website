@@ -2,6 +2,7 @@
             _hamburger.scss
 ================================================*/
 @use './../abstracts' as *;
+
 .hamburger--open {
 	@include position(fixed, 4rem, null, null, 24rem, 40px, 40px);
 	cursor: pointer;
@@ -18,26 +19,43 @@
 		@include hamburgerSpans($main2, 50%, 4px, 0.5rem);
 		transform-origin: 100% 0;
 	}
+	transition: transform 0.333s ease;
+	&:hover {
+		transform: scale(1.2);
+	}
 }
 
 .hamburger--close {
-	@include position(fixed, 4rem, null, null, 24rem, 40px, 40px);
+	@include position(fixed, 4rem, null, null, 23rem, 40px, 40px);
 	cursor: pointer;
 	z-index: 5 !important;
 
 	span:nth-child(1) {
 		@include hamburgerSpans($main2, 50%, 4px, 0.3rem);
+		/* transform: translate(-5%, 0) rotate(-40deg);
+		transform: translate(-50%, -50%) rotate(-45deg); */
+		transform: translateY(5px) rotate(135deg);
+		width: 100%;
+
 		
-		transform: translate(-5%, 0) rotate(-40deg);
 	}
 	span:nth-child(2) {
 		@include hamburgerSpans($main2, 100%, 4px, 0.5rem);
 		transform: translate(-50%, -50%) rotate(45deg);
+		opacity: 0;
+		
 	}
 	span:nth-child(3) {
 		@include hamburgerSpans($main2, 50%, 4px, null);
+
+/* 		transform: translate(-100%, 0) rotate(-45deg);
+		transform: translate(50%,50% ) rotate(45deg); */
+		transform: translateY(-8px) rotate(-135deg);
+		width: 100%;
 		
-		transform: translate(-100%, 0) rotate(-45deg);
-		transform: translate(-100%, 5) rotate(-43deg);
+	}
+	transition: transform 0.2s ease;
+	&:hover {
+		transform: scale(1.1);
 	}
 }
