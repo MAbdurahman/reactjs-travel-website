@@ -717,6 +717,11 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
 }
+@media (max-width: 36em) {
+  .nav__content li a {
+    text-align: center;
+  }
+}
 .nav__content li a:before {
   position: absolute;
   top: 0;
