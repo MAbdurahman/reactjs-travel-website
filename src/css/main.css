@@ -757,6 +757,8 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .col-1 {
@@ -1179,28 +1181,36 @@ a {
 }
 .destinations__heading {
   font-size: 2.8rem;
-  color: #000;
-  font-weight: 500;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  background: linear-gradient(-33deg, #000 50%, #ff4d58 50%);
+  color: transparent;
+  /* color: $black; */
   width: 56%;
+  width: 80%;
   line-height: 4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
+  margin: 0.67em 0;
+  /* &::after {
+  	position: absolute;
+  	content: '';
+  	bottom: -0.5rem;
+  	left: 40%;
+  	width: 30%;
+  	height: 0.2rem;
+  	background: $main1;
+  	@include responsive(large) {
+  		width: 70%;
+  	} 
+  }*/
 }
 @media (max-width: 75em) {
   .destinations__heading {
     width: 100%;
   }
-}
-.destinations__heading::after {
-  position: absolute;
-  content: "";
-  bottom: -0.5rem;
-  left: 40%;
-  width: 30%;
-  height: 0.2rem;
-  background: #ff4d58;
-  /* @include responsive(large) {
-  	width: 70%;
-  } */
 }
 .destinations__paragraph {
   font-size: 1.6rem;
@@ -1432,7 +1442,7 @@ a {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 4rem;
-  background: linear-gradient(35deg, #000 40%, #ff4d58 40%);
+  background: linear-gradient(-33deg, #000 50%, #ff4d58 50%);
   color: transparent;
   background-clip: text;
   text-transform: capitalize;

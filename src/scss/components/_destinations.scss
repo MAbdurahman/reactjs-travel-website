@@ -9,11 +9,19 @@
 	}
 	&__heading {
 		font-size: 2.8rem;
-		color: $black;
-		font-weight: 500;
+		font-size: 3.5rem;
+		font-weight: 900;
+		text-transform: capitalize;
+		background: linear-gradient(-33deg, #000 50%, #ff4d58 50% );
+		color: transparent;
+		/* color: $black; */
 		width: 56%;
+		width: 80%;
 		line-height: 4rem;
+		-webkit-background-clip: text;
+		background-clip: text;
 		position: relative;
+		margin: 0.67em 0;
 		@include responsive(large) {
 			width: 100%;
 		}
@@ -22,7 +30,7 @@
 			line-height: 3.5rem;
 			text-transform: capitalize;
 		}
-		&::after {
+		/* &::after {
 			position: absolute;
 			content: '';
 			bottom: -0.5rem;
@@ -30,10 +38,10 @@
 			width: 30%;
 			height: 0.2rem;
 			background: $main1;
-			/* @include responsive(large) {
+			@include responsive(large) {
 				width: 70%;
-			} */
-		}
+			} 
+		}*/
 	}
 	&__paragraph {
 		font-size: 1.6rem;
