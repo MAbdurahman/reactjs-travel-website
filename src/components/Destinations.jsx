@@ -15,9 +15,9 @@ export default function Destinations() {
 	return (
 		<div className='destinations'>
 			<div className='container'>
-				<div className='row ml-minus-15 mr-minus-15'>
-					<div className='col-6 p-15'>
-						<h3 className='destinations__heading'>{state.heading}</h3>
+				<div className='row'>
+					<div className='col-6 p-10'>
+						<h2 className='destinations__heading'>{state.heading}</h2>
 					</div>
 					<div className='col-6 p-15'>
 						<p className='destinations__paragraph'>{state.paragraph}</p>
@@ -25,7 +25,7 @@ export default function Destinations() {
 				</div>
 			</div>
 			<div className='destinations_block'>
-				<div className='row ml-minus-15 mr-minus-15'>
+				<div className='row'>
 					{destinations.map(destination => (
 						<DestinationsList
 							destination={destination}
