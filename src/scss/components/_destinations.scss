@@ -14,7 +14,6 @@
 		text-transform: capitalize;
 		background: linear-gradient(-33deg, #000 50%, #ff4d58 50% );
 		color: transparent;
-		/* color: $black; */
 		width: 56%;
 		width: 80%;
 		line-height: 4rem;
@@ -25,42 +24,32 @@
 		@include responsive(large) {
 			width: 100%;
 		}
-		@include responsive(xsmall) {
+		@include responsive(x-small) {
 			font-size: 2.1rem;
 			line-height: 3.5rem;
 			text-transform: capitalize;
 		}
-		/* &::after {
-			position: absolute;
-			content: '';
-			bottom: -0.5rem;
-			left: 40%;
-			width: 30%;
-			height: 0.2rem;
-			background: $main1;
-			@include responsive(large) {
-				width: 70%;
-			} 
-		}*/
+	
 	}
 	&__paragraph {
 		font-size: 1.6rem;
 		line-height: 2.7rem;
 		letter-spacing: 2px;
+		
 		color: $silverLight;
 		color: hsl(356, 100%, 10%);
 		font-weight: 600;
 	}
 	&__block {
 		margin-top: 6rem;
-		@include responsive(xsmall) {
+		@include responsive(x-small) {
 			margin-top: 3rem;
 		}
 	}
 	&__card {
 		width: 100%;
 		height: 35rem;
-		border-radius: 1rem;
+		border-radius: 5px;
 		overflow: hidden;
 		position: relative;
 		&__img {
@@ -91,6 +80,7 @@
 			@include position(absolute, 0, 0, null, null, 100%, 100%);
 			@include align(flex, center, center, null);
 			background: linear-gradient(to right, $main1, $main2);
+			background: linear-gradient(to right, $silver-for-destination-1, $silver-for-destination-2);
 			visibility: hidden;
 			transform: scale(0);
 			transition: all 0.5s linear;
