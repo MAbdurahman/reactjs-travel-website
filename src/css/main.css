@@ -1206,6 +1206,11 @@ a {
 .destinations {
   margin: 8rem 0;
 }
+@media (max-width: 36em) {
+  .destinations {
+    margin: 4rem 0;
+  }
+}
 .destinations__heading {
   font-size: 2.8rem;
   font-size: 3.5rem;
@@ -1242,8 +1247,10 @@ a {
 .destinations__paragraph {
   font-size: 1.6rem;
   line-height: 2.7rem;
+  letter-spacing: 2px;
   color: #aaa;
-  font-weight: 400;
+  color: hsl(356deg, 100%, 10%);
+  font-weight: 600;
 }
 .destinations__block {
   margin-top: 6rem;
