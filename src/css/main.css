@@ -1218,7 +1218,6 @@ a {
   text-transform: capitalize;
   background: linear-gradient(-33deg, #000 50%, #ff4d58 50%);
   color: transparent;
-  /* color: $black; */
   width: 56%;
   width: 80%;
   line-height: 4rem;
@@ -1226,22 +1225,17 @@ a {
   background-clip: text;
   position: relative;
   margin: 0.67em 0;
-  /* &::after {
-  	position: absolute;
-  	content: '';
-  	bottom: -0.5rem;
-  	left: 40%;
-  	width: 30%;
-  	height: 0.2rem;
-  	background: $main1;
-  	@include responsive(large) {
-  		width: 70%;
-  	} 
-  }*/
 }
 @media (max-width: 75em) {
   .destinations__heading {
     width: 100%;
+  }
+}
+@media (max-width: 36em) {
+  .destinations__heading {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+    text-transform: capitalize;
   }
 }
 .destinations__paragraph {
@@ -1254,6 +1248,11 @@ a {
 }
 .destinations__block {
   margin-top: 6rem;
+}
+@media (max-width: 36em) {
+  .destinations__block {
+    margin-top: 3rem;
+  }
 }
 .destinations__card {
   width: 100%;
