@@ -40,7 +40,7 @@ export default function SignIn(props) {
 				/>
 			</div>
 			<div className='group model__row'>
-				<input type='submit' name='' className='btn-dark' value='Sign In' />
+				<input type='submit' name='' className='btn-default' value='Sign In' />
 				<p style={{ display: 'inline-block', marginLeft: '4em' }}>
 					Do not have an account?&nbsp;
 					<span

@@ -51,7 +51,7 @@ export default function SignUp(props) {
 				/>
 			</div>
 			<div className='group model__row'>
-				<input type='submit' name='' className='btn-dark' value='Sign Up' />
+				<input type='submit' name='' className='btn-default' value='Sign Up' />
 				<p style={{ display: 'inline-block', marginLeft: '4em' }}>
 					Already have an account?&nbsp;
 					<span
