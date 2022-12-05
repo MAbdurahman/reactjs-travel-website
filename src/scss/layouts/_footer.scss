@@ -6,7 +6,7 @@
 	width: 100%;
 	margin-top: 8rem;
 	padding: 8rem 0;
-	@include responsive(xsmall) {
+	@include responsive(x-small) {
 		margin-top: 4rem;
 		padding: 4rem 0;
 	}
@@ -23,7 +23,7 @@
 			@include responsive(small) {
 				width: 13rem;
 			}
-			@include responsive(xsmall) {
+			@include responsive(x-small) {
 				width: 10rem;
 			}
 			img {
@@ -39,7 +39,7 @@
 			width: 80%;
 			font-weight: 400;
 			line-height: 2.5rem;
-			@include responsive(xsmall) {
+			@include responsive(x-small) {
 				width: 100%;
 				font-size: 1.4rem;
 			}
@@ -51,7 +51,7 @@
 		font-size: 1.6rem;
 		letter-spacing: 0.2rem;
 		margin-bottom: 2rem;
-		@include responsive(xsmall) {
+		@include responsive(x-small) {
 			font-size: 1.4rem;
 		}
 	}
@@ -83,7 +83,7 @@
 			font-size: 1.1rem;
 			text-transform: capitalize;
 			letter-spacing: 1px;
-			@include responsive(xsmall) {
+			@include responsive(x-small) {
 				font-size: 1rem;
 			}
 		}

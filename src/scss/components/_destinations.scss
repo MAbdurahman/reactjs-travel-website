@@ -4,7 +4,7 @@
 @use './../abstracts' as *;
 .destinations {
 	margin: 8rem 0;
-	@include responsive(xsmall) {
+	@include responsive(x-small) {
 		margin: 4rem 0;
 	}
 	&__heading {
@@ -46,8 +46,10 @@
 	&__paragraph {
 		font-size: 1.6rem;
 		line-height: 2.7rem;
+		letter-spacing: 2px;
 		color: $silverLight;
-		font-weight: 400;
+		color: hsl(356, 100%, 10%);
+		font-weight: 600;
 	}
 	&__block {
 		margin-top: 6rem;
